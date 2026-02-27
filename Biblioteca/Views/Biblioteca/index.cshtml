@@ -1,0 +1,10 @@
+@model List<Biblioteca.Models.Livro>;
+
+@foreach(Livro item in Model){
+    <h1>Index de Biblioteca</h1>
+    <p>Nome do Livro: @item.titulo</p>
+    <p>Número de páginas: @item.numPaginas</p>
+    <p>Autor: @item.autor</p>
+    <p>Gênero: @item.genero</p>
+    <p>Data de publicação: @item.dataPublicacao</p>
+}
