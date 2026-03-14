@@ -8,18 +8,18 @@ public class BibliotecaController : Controller{
 
         List<Livro> l1 = new List<Livro>(){
             new Livro {
-                l1.titulo = "Harry Potter",
-                l1.numPaginas = 150,
-                l1.autor = "Fulano",
-                l1.genero = "Fantasia",
-                l1.dataPublicacao = DateOnly.MaxValue
+                Titulo = "Harry Potter",
+                NumPaginas = 150,
+                Autor = "Fulano",
+                Genero = "Fantasia",
+                DataPublicacao = DateOnly.MaxValue
             },
             new Livro {
-                l1.titulo = "Alice no País das Maravilhas",
-                l1.numPaginas = 500,
-                l1.autor = "Ciclano",
-                l1.genero = "Romance",
-                l1.dataPublicacao = new DateOnly(2000,01,01)
+                Titulo = "Alice no País das Maravilhas",
+                NumPaginas = 500,
+                Autor = "Ciclano",
+                Genero = "Romance",
+                DataPublicacao = new DateOnly(2000,01,01)
             }
         };
         return View(l1);
